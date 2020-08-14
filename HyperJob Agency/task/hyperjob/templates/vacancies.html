@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+{% for post in posts %}
+    <div>
+        {{ post.author.username }}: {{ post.description }}
+    </div>
+ {% empty %}
+    <div>Sorry! Vacancy listings currently unavailable</div>
+ {% endfor %}
+</body>
+</html>

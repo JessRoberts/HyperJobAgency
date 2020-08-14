@@ -1,0 +1,11 @@
+ {% for key, value in menu.items %}
+    <div>
+        <a href="{{ value }}"> {{ key }}</a>
+    </div>
+    {% endfor %}
+
+    {% for resume in resumes %}
+    <div>
+        {{ resume.author.username }}: {{ resume.description }}
+    </div>
+ {% endfor %}
